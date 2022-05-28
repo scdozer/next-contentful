@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "components": ["./components"],
+      "contentful": ["./contentful"],
+      "context": ["./context"],
+      "modules": ["./modules"],
+      "lib": ["./lib"],
+      "pages": ["./pages"],
+      "public": ["./public"],
+      "styles": ["./styles"]
+    }
+  }
+}

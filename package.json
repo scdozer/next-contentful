@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "build:local": "next build",
+    "start": "next start",
+    "start:local": "next start",
+    "setup": "node ./contentful/setup.js $CONTENTFUL_SPACE_ID $CONTENTFUL_MANAGEMENT_TOKEN",
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.4.0",
+    "@contentful/rich-text-types": "^15.12.1",
+    "classnames": "2.3.1",
+    "date-fns": "2.22.1",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "gsap": "npm:@gsap/shockingly@^3.10.4",
+    "lodash": "^4.17.21",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "autoprefixer": "10.2.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "contentful-import": "^8.2.24",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^12.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "postcss": "8.3.5",
+    "prettier": "^2.4.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
